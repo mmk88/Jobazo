@@ -7,13 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		975E9F411A22A0130043E618 /* MMKMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E9F401A22A0130043E618 /* MMKMessageData.m */; };
+		EA092A481A2BD89A000AB23C /* mmk.png in Resources */ = {isa = PBXBuildFile; fileRef = EA092A471A2BD89A000AB23C /* mmk.png */; };
 		EA1F1AB11A09B0210003E5E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1F1AB01A09B0210003E5E4 /* main.m */; };
 		EA1F1AB41A09B0210003E5E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1F1AB31A09B0210003E5E4 /* AppDelegate.m */; };
-		EA1F1AB71A09B0210003E5E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1F1AB61A09B0210003E5E4 /* ViewController.m */; };
 		EA1F1ABA1A09B0210003E5E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1F1AB81A09B0210003E5E4 /* Main.storyboard */; };
 		EA1F1ABC1A09B0210003E5E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1F1ABB1A09B0210003E5E4 /* Images.xcassets */; };
 		EA1F1ABF1A09B0210003E5E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1F1ABD1A09B0210003E5E4 /* LaunchScreen.xib */; };
 		EA1F1ACB1A09B0210003E5E4 /* JobazoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1F1ACA1A09B0210003E5E4 /* JobazoTests.m */; };
+		EA31817D1A29403A00F83DA7 /* MMKBusinessChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31817C1A29403A00F83DA7 /* MMKBusinessChatViewController.m */; };
+		EA3181801A29406200F83DA7 /* MMKBusinessMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31817F1A29406200F83DA7 /* MMKBusinessMatchViewController.m */; };
+		EA3181831A2940C900F83DA7 /* MMKBusinessMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3181821A2940C900F83DA7 /* MMKBusinessMatchesViewController.m */; };
+		EA3324811A4C8FBD00A42A0C /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3324801A4C8FBD00A42A0C /* login.png */; };
+		EA3324831A4C911300A42A0C /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3324821A4C911300A42A0C /* line.png */; };
+		EA3324861A4C93D600A42A0C /* login2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3324851A4C93D600A42A0C /* login2.png */; };
+		EA33F4571A51434900AB5690 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA33F4561A51434900AB5690 /* white.jpg */; };
+		EA52E0431A0C60BD00BA280C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52E0421A0C60BD00BA280C /* AudioToolbox.framework */; };
+		EA54D7A21A4D5898000688D0 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54D7A11A4D5898000688D0 /* Icon-60@2x.png */; };
+		EA54D7A81A4D58AF000688D0 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54D7A31A4D58AF000688D0 /* Icon-60@3x.png */; };
+		EA54D7A91A4D58AF000688D0 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54D7A41A4D58AF000688D0 /* Icon-Small-40@2x.png */; };
+		EA54D7AA1A4D58AF000688D0 /* Icon-Small-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54D7A51A4D58AF000688D0 /* Icon-Small-40@3x.png */; };
+		EA54D7AB1A4D58AF000688D0 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54D7A61A4D58AF000688D0 /* Icon-Small@2x.png */; };
+		EA54D7AC1A4D58AF000688D0 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54D7A71A4D58AF000688D0 /* Icon-Small@3x.png */; };
+		EA66C3BD1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA66C3BC1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m */; };
+		EA8E3EF81A4CF35900D85FB7 /* defaultPrefsFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8E3EF71A4CF35900D85FB7 /* defaultPrefsFile.plist */; };
+		EAA632891A0C723500B6A80A /* MMKChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA632881A0C723500B6A80A /* MMKChatViewController.m */; };
+		EAA7CB791A51C4E100AFC945 /* white_bckg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAA7CB781A51C4E100AFC945 /* white_bckg.jpg */; };
+		EAAAB0F01A2CF6800035A60E /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAAB0EF1A2CF6800035A60E /* green_button.png */; };
+		EABCF8A41A0C5D9200FF5D48 /* MMKMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABCF8A31A0C5D9200FF5D48 /* MMKMatchesViewController.m */; };
+		EABCF8A61A0C5FB800FF5D48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABCF8A51A0C5FB800FF5D48 /* QuartzCore.framework */; };
+		EACAEEA61A2958FB00542F53 /* MMKBusinessMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = EACAEEA51A2958FB00542F53 /* MMKBusinessMessageData.m */; };
+		EACF07361A09B92B004604CB /* MMKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF07351A09B92B004604CB /* MMKConstants.m */; };
+		EACF07391A09BC27004604CB /* MMKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF07381A09BC27004604CB /* MMKLoginViewController.m */; };
+		EACF073C1A09BC45004604CB /* MMKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF073B1A09BC45004604CB /* MMKProfileViewController.m */; };
+		EACF073F1A09BC52004604CB /* MMKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF073E1A09BC52004604CB /* MMKHomeViewController.m */; };
+		EACF07421A09BC68004604CB /* MMKSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF07411A09BC68004604CB /* MMKSettingsViewController.m */; };
+		EACF07451A09BCB1004604CB /* MMKTestUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF07441A09BCB1004604CB /* MMKTestUser.m */; };
+		EACF074B1A09BCE0004604CB /* MMKMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACF074A1A09BCE0004604CB /* MMKMatchViewController.m */; };
+		EACF074F1A09BE4C004604CB /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EACF074E1A09BE4C004604CB /* 1.jpeg */; };
+		EACF07591A09C700004604CB /* libPods-Bolts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07521A09C700004604CB /* libPods-Bolts.a */; };
+		EACF075A1A09C700004604CB /* libPods-Facebook-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07531A09C700004604CB /* libPods-Facebook-iOS-SDK.a */; };
+		EACF075B1A09C700004604CB /* libPods-JSMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07541A09C700004604CB /* libPods-JSMessagesViewController.a */; };
+		EACF075C1A09C700004604CB /* libPods-JSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07551A09C700004604CB /* libPods-JSQSystemSoundPlayer.a */; };
+		EACF075D1A09C700004604CB /* libPods-Parse-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07561A09C700004604CB /* libPods-Parse-iOS.a */; };
+		EACF075E1A09C700004604CB /* libPods-Parse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07571A09C700004604CB /* libPods-Parse.a */; };
+		EACF075F1A09C700004604CB /* libPods-ParseFacebookUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07581A09C700004604CB /* libPods-ParseFacebookUtils.a */; };
+		EAE468761A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE468751A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m */; };
+		EAE468781A280EC300B8FC57 /* now-hiring.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAE468771A280EC300B8FC57 /* now-hiring.jpg */; };
+		EAE4687C1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4687B1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m */; };
+		EAE468811A28650E00B8FC57 /* MMKJobPostingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE468801A28650E00B8FC57 /* MMKJobPostingViewController.m */; };
+		EAF64B441A211F770073901E /* MMKBusinessLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF64B431A211F770073901E /* MMKBusinessLoginViewController.m */; };
+		EAF64B481A2129E20073901E /* MMKBusinessSetttingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF64B471A2129E20073901E /* MMKBusinessSetttingsViewController.m */; };
+		EAF64B4C1A213CD00073901E /* RegisteredBusinessLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF64B4B1A213CD00073901E /* RegisteredBusinessLoginViewController.m */; };
+		F59BCC140644F1DD51B18C02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E439FD8353CEDA4F5488C9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +73,89 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70E439FD8353CEDA4F5488C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		975E9F3F1A22A0130043E618 /* MMKMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKMessageData.h; sourceTree = "<group>"; };
+		975E9F401A22A0130043E618 /* MMKMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKMessageData.m; sourceTree = "<group>"; };
+		9D06DF00A80B6D461864E548 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B80AF4FD22F9E8F90CF22557 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EA092A471A2BD89A000AB23C /* mmk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmk.png; sourceTree = "<group>"; };
 		EA1F1AAB1A09B0210003E5E4 /* Jobazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobazo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1F1AAF1A09B0210003E5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA1F1AB01A09B0210003E5E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA1F1AB21A09B0210003E5E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA1F1AB31A09B0210003E5E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA1F1AB51A09B0210003E5E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EA1F1AB61A09B0210003E5E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA1F1AB91A09B0210003E5E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA1F1ABB1A09B0210003E5E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA1F1ABE1A09B0210003E5E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EA1F1AC41A09B0210003E5E4 /* JobazoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobazoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1F1AC91A09B0210003E5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA1F1ACA1A09B0210003E5E4 /* JobazoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobazoTests.m; sourceTree = "<group>"; };
+		EA31817B1A29403A00F83DA7 /* MMKBusinessChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKBusinessChatViewController.h; sourceTree = "<group>"; };
+		EA31817C1A29403A00F83DA7 /* MMKBusinessChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKBusinessChatViewController.m; sourceTree = "<group>"; };
+		EA31817E1A29406200F83DA7 /* MMKBusinessMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKBusinessMatchViewController.h; sourceTree = "<group>"; };
+		EA31817F1A29406200F83DA7 /* MMKBusinessMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKBusinessMatchViewController.m; sourceTree = "<group>"; };
+		EA3181811A2940C900F83DA7 /* MMKBusinessMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKBusinessMatchesViewController.h; sourceTree = "<group>"; };
+		EA3181821A2940C900F83DA7 /* MMKBusinessMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKBusinessMatchesViewController.m; sourceTree = "<group>"; };
+		EA3324801A4C8FBD00A42A0C /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		EA3324821A4C911300A42A0C /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		EA3324851A4C93D600A42A0C /* login2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login2.png; sourceTree = "<group>"; };
+		EA33F4561A51434900AB5690 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
+		EA52E0421A0C60BD00BA280C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EA52E0441A0C60C400BA280C /* libPods-JSQMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-JSQMessagesViewController.a"; path = "Pods/build/Debug-iphoneos/libPods-JSQMessagesViewController.a"; sourceTree = "<group>"; };
+		EA54D7A11A4D5898000688D0 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		EA54D7A31A4D58AF000688D0 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		EA54D7A41A4D58AF000688D0 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
+		EA54D7A51A4D58AF000688D0 /* Icon-Small-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@3x.png"; sourceTree = "<group>"; };
+		EA54D7A61A4D58AF000688D0 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		EA54D7A71A4D58AF000688D0 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		EA66C3BB1A0AB1DA00D57CC4 /* MMKEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKEditProfileViewController.h; sourceTree = "<group>"; };
+		EA66C3BC1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKEditProfileViewController.m; sourceTree = "<group>"; };
+		EA8E3EF71A4CF35900D85FB7 /* defaultPrefsFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultPrefsFile.plist; sourceTree = "<group>"; };
+		EAA632871A0C723500B6A80A /* MMKChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKChatViewController.h; sourceTree = "<group>"; };
+		EAA632881A0C723500B6A80A /* MMKChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKChatViewController.m; sourceTree = "<group>"; };
+		EAA7CB781A51C4E100AFC945 /* white_bckg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_bckg.jpg; sourceTree = "<group>"; };
+		EAAAB0EF1A2CF6800035A60E /* green_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_button.png; sourceTree = "<group>"; };
+		EABCF8A21A0C5D9200FF5D48 /* MMKMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKMatchesViewController.h; sourceTree = "<group>"; };
+		EABCF8A31A0C5D9200FF5D48 /* MMKMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKMatchesViewController.m; sourceTree = "<group>"; };
+		EABCF8A51A0C5FB800FF5D48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EACAEEA41A2958FB00542F53 /* MMKBusinessMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKBusinessMessageData.h; sourceTree = "<group>"; };
+		EACAEEA51A2958FB00542F53 /* MMKBusinessMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKBusinessMessageData.m; sourceTree = "<group>"; };
+		EACF07341A09B92B004604CB /* MMKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKConstants.h; sourceTree = "<group>"; };
+		EACF07351A09B92B004604CB /* MMKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKConstants.m; sourceTree = "<group>"; };
+		EACF07371A09BC27004604CB /* MMKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKLoginViewController.h; sourceTree = "<group>"; };
+		EACF07381A09BC27004604CB /* MMKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKLoginViewController.m; sourceTree = "<group>"; };
+		EACF073A1A09BC45004604CB /* MMKProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKProfileViewController.h; sourceTree = "<group>"; };
+		EACF073B1A09BC45004604CB /* MMKProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKProfileViewController.m; sourceTree = "<group>"; };
+		EACF073D1A09BC52004604CB /* MMKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKHomeViewController.h; sourceTree = "<group>"; };
+		EACF073E1A09BC52004604CB /* MMKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKHomeViewController.m; sourceTree = "<group>"; };
+		EACF07401A09BC68004604CB /* MMKSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKSettingsViewController.h; sourceTree = "<group>"; };
+		EACF07411A09BC68004604CB /* MMKSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKSettingsViewController.m; sourceTree = "<group>"; };
+		EACF07431A09BCB1004604CB /* MMKTestUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKTestUser.h; sourceTree = "<group>"; };
+		EACF07441A09BCB1004604CB /* MMKTestUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKTestUser.m; sourceTree = "<group>"; };
+		EACF07491A09BCE0004604CB /* MMKMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKMatchViewController.h; sourceTree = "<group>"; };
+		EACF074A1A09BCE0004604CB /* MMKMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKMatchViewController.m; sourceTree = "<group>"; };
+		EACF074E1A09BE4C004604CB /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpeg; path = ../1.jpeg; sourceTree = "<group>"; };
+		EACF07521A09C700004604CB /* libPods-Bolts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Bolts.a"; path = "Pods/build/Debug-iphoneos/libPods-Bolts.a"; sourceTree = "<group>"; };
+		EACF07531A09C700004604CB /* libPods-Facebook-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Facebook-iOS-SDK.a"; path = "Pods/build/Debug-iphoneos/libPods-Facebook-iOS-SDK.a"; sourceTree = "<group>"; };
+		EACF07541A09C700004604CB /* libPods-JSMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-JSMessagesViewController.a"; path = "Pods/build/Debug-iphoneos/libPods-JSMessagesViewController.a"; sourceTree = "<group>"; };
+		EACF07551A09C700004604CB /* libPods-JSQSystemSoundPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-JSQSystemSoundPlayer.a"; path = "Pods/build/Debug-iphoneos/libPods-JSQSystemSoundPlayer.a"; sourceTree = "<group>"; };
+		EACF07561A09C700004604CB /* libPods-Parse-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Parse-iOS.a"; path = "Pods/build/Debug-iphoneos/libPods-Parse-iOS.a"; sourceTree = "<group>"; };
+		EACF07571A09C700004604CB /* libPods-Parse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Parse.a"; path = "Pods/build/Debug-iphoneos/libPods-Parse.a"; sourceTree = "<group>"; };
+		EACF07581A09C700004604CB /* libPods-ParseFacebookUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ParseFacebookUtils.a"; path = "Pods/build/Debug-iphoneos/libPods-ParseFacebookUtils.a"; sourceTree = "<group>"; };
+		EACF07601A09C90F004604CB /* Jobazo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jobazo-PrefixHeader.pch"; sourceTree = "<group>"; };
+		EAE468741A26756F00B8FC57 /* MMKEditBusinessPostingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKEditBusinessPostingViewController.h; sourceTree = "<group>"; };
+		EAE468751A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKEditBusinessPostingViewController.m; sourceTree = "<group>"; };
+		EAE468771A280EC300B8FC57 /* now-hiring.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "now-hiring.jpg"; sourceTree = "<group>"; };
+		EAE4687A1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKEditBusinessInformationViewController.h; sourceTree = "<group>"; };
+		EAE4687B1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKEditBusinessInformationViewController.m; sourceTree = "<group>"; };
+		EAE4687F1A28650E00B8FC57 /* MMKJobPostingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKJobPostingViewController.h; sourceTree = "<group>"; };
+		EAE468801A28650E00B8FC57 /* MMKJobPostingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKJobPostingViewController.m; sourceTree = "<group>"; };
+		EAF64B421A211F770073901E /* MMKBusinessLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKBusinessLoginViewController.h; sourceTree = "<group>"; };
+		EAF64B431A211F770073901E /* MMKBusinessLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKBusinessLoginViewController.m; sourceTree = "<group>"; };
+		EAF64B461A2129E20073901E /* MMKBusinessSetttingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKBusinessSetttingsViewController.h; sourceTree = "<group>"; };
+		EAF64B471A2129E20073901E /* MMKBusinessSetttingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKBusinessSetttingsViewController.m; sourceTree = "<group>"; };
+		EAF64B4A1A213CD00073901E /* RegisteredBusinessLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredBusinessLoginViewController.h; sourceTree = "<group>"; };
+		EAF64B4B1A213CD00073901E /* RegisteredBusinessLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteredBusinessLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +163,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA52E0431A0C60BD00BA280C /* AudioToolbox.framework in Frameworks */,
+				EABCF8A61A0C5FB800FF5D48 /* QuartzCore.framework in Frameworks */,
+				EACF07591A09C700004604CB /* libPods-Bolts.a in Frameworks */,
+				EACF075A1A09C700004604CB /* libPods-Facebook-iOS-SDK.a in Frameworks */,
+				EACF075B1A09C700004604CB /* libPods-JSMessagesViewController.a in Frameworks */,
+				EACF075C1A09C700004604CB /* libPods-JSQSystemSoundPlayer.a in Frameworks */,
+				EACF075D1A09C700004604CB /* libPods-Parse-iOS.a in Frameworks */,
+				EACF075E1A09C700004604CB /* libPods-Parse.a in Frameworks */,
+				EACF075F1A09C700004604CB /* libPods-ParseFacebookUtils.a in Frameworks */,
+				F59BCC140644F1DD51B18C02 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +186,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121912C415EEBB41E8D58AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA52E0441A0C60C400BA280C /* libPods-JSQMessagesViewController.a */,
+				EA52E0421A0C60BD00BA280C /* AudioToolbox.framework */,
+				EABCF8A51A0C5FB800FF5D48 /* QuartzCore.framework */,
+				EACF07521A09C700004604CB /* libPods-Bolts.a */,
+				EACF07531A09C700004604CB /* libPods-Facebook-iOS-SDK.a */,
+				EACF07541A09C700004604CB /* libPods-JSMessagesViewController.a */,
+				EACF07551A09C700004604CB /* libPods-JSQSystemSoundPlayer.a */,
+				EACF07561A09C700004604CB /* libPods-Parse-iOS.a */,
+				EACF07571A09C700004604CB /* libPods-Parse.a */,
+				EACF07581A09C700004604CB /* libPods-ParseFacebookUtils.a */,
+				70E439FD8353CEDA4F5488C9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6E77BE68FE196E0515CE7D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B80AF4FD22F9E8F90CF22557 /* Pods.debug.xcconfig */,
+				9D06DF00A80B6D461864E548 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA1F1AA21A09B0210003E5E4 = {
 			isa = PBXGroup;
 			children = (
 				EA1F1AAD1A09B0210003E5E4 /* Jobazo */,
 				EA1F1AC71A09B0210003E5E4 /* JobazoTests */,
 				EA1F1AAC1A09B0210003E5E4 /* Products */,
+				D6E77BE68FE196E0515CE7D7 /* Pods */,
+				121912C415EEBB41E8D58AD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +236,31 @@
 		EA1F1AAD1A09B0210003E5E4 /* Jobazo */ = {
 			isa = PBXGroup;
 			children = (
+				EA31817A1A29401F00F83DA7 /* Business Chat */,
+				EA3181791A293FFF00F83DA7 /* Business Match */,
+				EA3181781A293FEC00F83DA7 /* Business Matches */,
+				EAE4687E1A2864F600B8FC57 /* Job Posting View */,
+				EAE468791A2813BF00B8FC57 /* Business Information */,
+				EAE468721A26754B00B8FC57 /* Edit Business Posting  */,
+				EACF07301A09B8B1004604CB /* Home */,
+				EAF64B451A2129D20073901E /* Business Settings  */,
+				EAF64B3E1A211F340073901E /* BusinessLogin */,
+				EAF64B491A213CAD0073901E /* RegisteredBusinessLogin */,
+				EACF07331A09B8F5004604CB /* Edit Profile */,
+				EACF07321A09B8D2004604CB /* Create Parse User */,
+				EACF07311A09B8C2004604CB /* Settings */,
+				EACF072F1A09B8AB004604CB /* Profile */,
+				EACF072E1A09B8A6004604CB /* Login */,
+				EACF072D1A09B8A1004604CB /* Matches */,
+				EACF072C1A09B89B004604CB /* Match */,
+				EACF072B1A09B891004604CB /* Chat */,
 				EA1F1AB21A09B0210003E5E4 /* AppDelegate.h */,
 				EA1F1AB31A09B0210003E5E4 /* AppDelegate.m */,
-				EA1F1AB51A09B0210003E5E4 /* ViewController.h */,
-				EA1F1AB61A09B0210003E5E4 /* ViewController.m */,
 				EA1F1AB81A09B0210003E5E4 /* Main.storyboard */,
 				EA1F1ABB1A09B0210003E5E4 /* Images.xcassets */,
 				EA1F1ABD1A09B0210003E5E4 /* LaunchScreen.xib */,
 				EA1F1AAE1A09B0210003E5E4 /* Supporting Files */,
+				EACF07601A09C90F004604CB /* Jobazo-PrefixHeader.pch */,
 			);
 			path = Jobazo;
 			sourceTree = "<group>";
@@ -96,8 +268,15 @@
 		EA1F1AAE1A09B0210003E5E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAA7CB781A51C4E100AFC945 /* white_bckg.jpg */,
+				EA33F4561A51434900AB5690 /* white.jpg */,
+				EA54D7A01A4D581F000688D0 /* Icons v2 */,
+				EAB5AEB51A4CF1F100211F25 /* Icons */,
+				EA3324841A4C93B700A42A0C /* images */,
 				EA1F1AAF1A09B0210003E5E4 /* Info.plist */,
 				EA1F1AB01A09B0210003E5E4 /* main.m */,
+				EACF07341A09B92B004604CB /* MMKConstants.h */,
+				EACF07351A09B92B004604CB /* MMKConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +298,207 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EA3181781A293FEC00F83DA7 /* Business Matches */ = {
+			isa = PBXGroup;
+			children = (
+				EA3181811A2940C900F83DA7 /* MMKBusinessMatchesViewController.h */,
+				EA3181821A2940C900F83DA7 /* MMKBusinessMatchesViewController.m */,
+			);
+			name = "Business Matches";
+			sourceTree = "<group>";
+		};
+		EA3181791A293FFF00F83DA7 /* Business Match */ = {
+			isa = PBXGroup;
+			children = (
+				EA31817E1A29406200F83DA7 /* MMKBusinessMatchViewController.h */,
+				EA31817F1A29406200F83DA7 /* MMKBusinessMatchViewController.m */,
+			);
+			name = "Business Match";
+			sourceTree = "<group>";
+		};
+		EA31817A1A29401F00F83DA7 /* Business Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EA31817B1A29403A00F83DA7 /* MMKBusinessChatViewController.h */,
+				EA31817C1A29403A00F83DA7 /* MMKBusinessChatViewController.m */,
+				EACAEEA41A2958FB00542F53 /* MMKBusinessMessageData.h */,
+				EACAEEA51A2958FB00542F53 /* MMKBusinessMessageData.m */,
+			);
+			name = "Business Chat";
+			sourceTree = "<group>";
+		};
+		EA3324841A4C93B700A42A0C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EA3324851A4C93D600A42A0C /* login2.png */,
+				EA092A471A2BD89A000AB23C /* mmk.png */,
+				EACF074E1A09BE4C004604CB /* 1.jpeg */,
+				EAE468771A280EC300B8FC57 /* now-hiring.jpg */,
+				EA3324801A4C8FBD00A42A0C /* login.png */,
+				EAAAB0EF1A2CF6800035A60E /* green_button.png */,
+				EA3324821A4C911300A42A0C /* line.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		EA54D7A01A4D581F000688D0 /* Icons v2 */ = {
+			isa = PBXGroup;
+			children = (
+				EA54D7A31A4D58AF000688D0 /* Icon-60@3x.png */,
+				EA54D7A41A4D58AF000688D0 /* Icon-Small-40@2x.png */,
+				EA54D7A51A4D58AF000688D0 /* Icon-Small-40@3x.png */,
+				EA54D7A61A4D58AF000688D0 /* Icon-Small@2x.png */,
+				EA54D7A71A4D58AF000688D0 /* Icon-Small@3x.png */,
+				EA54D7A11A4D5898000688D0 /* Icon-60@2x.png */,
+			);
+			name = "Icons v2";
+			sourceTree = "<group>";
+		};
+		EAB5AEB51A4CF1F100211F25 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		EACF072B1A09B891004604CB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EAA632871A0C723500B6A80A /* MMKChatViewController.h */,
+				EAA632881A0C723500B6A80A /* MMKChatViewController.m */,
+				975E9F3F1A22A0130043E618 /* MMKMessageData.h */,
+				975E9F401A22A0130043E618 /* MMKMessageData.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		EACF072C1A09B89B004604CB /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				EACF07491A09BCE0004604CB /* MMKMatchViewController.h */,
+				EACF074A1A09BCE0004604CB /* MMKMatchViewController.m */,
+			);
+			name = Match;
+			sourceTree = "<group>";
+		};
+		EACF072D1A09B8A1004604CB /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				EABCF8A21A0C5D9200FF5D48 /* MMKMatchesViewController.h */,
+				EABCF8A31A0C5D9200FF5D48 /* MMKMatchesViewController.m */,
+			);
+			name = Matches;
+			sourceTree = "<group>";
+		};
+		EACF072E1A09B8A6004604CB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EACF07371A09BC27004604CB /* MMKLoginViewController.h */,
+				EACF07381A09BC27004604CB /* MMKLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EACF072F1A09B8AB004604CB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EACF073A1A09BC45004604CB /* MMKProfileViewController.h */,
+				EACF073B1A09BC45004604CB /* MMKProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		EACF07301A09B8B1004604CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EACF073D1A09BC52004604CB /* MMKHomeViewController.h */,
+				EACF073E1A09BC52004604CB /* MMKHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EACF07311A09B8C2004604CB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EACF07401A09BC68004604CB /* MMKSettingsViewController.h */,
+				EACF07411A09BC68004604CB /* MMKSettingsViewController.m */,
+				EA8E3EF71A4CF35900D85FB7 /* defaultPrefsFile.plist */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		EACF07321A09B8D2004604CB /* Create Parse User */ = {
+			isa = PBXGroup;
+			children = (
+				EACF07431A09BCB1004604CB /* MMKTestUser.h */,
+				EACF07441A09BCB1004604CB /* MMKTestUser.m */,
+			);
+			name = "Create Parse User";
+			sourceTree = "<group>";
+		};
+		EACF07331A09B8F5004604CB /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EA66C3BB1A0AB1DA00D57CC4 /* MMKEditProfileViewController.h */,
+				EA66C3BC1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m */,
+			);
+			name = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		EAE468721A26754B00B8FC57 /* Edit Business Posting  */ = {
+			isa = PBXGroup;
+			children = (
+				EAE468741A26756F00B8FC57 /* MMKEditBusinessPostingViewController.h */,
+				EAE468751A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m */,
+			);
+			name = "Edit Business Posting ";
+			sourceTree = "<group>";
+		};
+		EAE468791A2813BF00B8FC57 /* Business Information */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4687A1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.h */,
+				EAE4687B1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m */,
+			);
+			name = "Business Information";
+			sourceTree = "<group>";
+		};
+		EAE4687E1A2864F600B8FC57 /* Job Posting View */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4687F1A28650E00B8FC57 /* MMKJobPostingViewController.h */,
+				EAE468801A28650E00B8FC57 /* MMKJobPostingViewController.m */,
+			);
+			name = "Job Posting View";
+			sourceTree = "<group>";
+		};
+		EAF64B3E1A211F340073901E /* BusinessLogin */ = {
+			isa = PBXGroup;
+			children = (
+				EAF64B421A211F770073901E /* MMKBusinessLoginViewController.h */,
+				EAF64B431A211F770073901E /* MMKBusinessLoginViewController.m */,
+			);
+			name = BusinessLogin;
+			sourceTree = "<group>";
+		};
+		EAF64B451A2129D20073901E /* Business Settings  */ = {
+			isa = PBXGroup;
+			children = (
+				EAF64B461A2129E20073901E /* MMKBusinessSetttingsViewController.h */,
+				EAF64B471A2129E20073901E /* MMKBusinessSetttingsViewController.m */,
+			);
+			name = "Business Settings ";
+			sourceTree = "<group>";
+		};
+		EAF64B491A213CAD0073901E /* RegisteredBusinessLogin */ = {
+			isa = PBXGroup;
+			children = (
+				EAF64B4A1A213CD00073901E /* RegisteredBusinessLoginViewController.h */,
+				EAF64B4B1A213CD00073901E /* RegisteredBusinessLoginViewController.m */,
+			);
+			name = RegisteredBusinessLogin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +506,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA1F1ACE1A09B0210003E5E4 /* Build configuration list for PBXNativeTarget "Jobazo" */;
 			buildPhases = (
+				A55034E61B036BE63EB54788 /* Check Pods Manifest.lock */,
 				EA1F1AA71A09B0210003E5E4 /* Sources */,
 				EA1F1AA81A09B0210003E5E4 /* Frameworks */,
 				EA1F1AA91A09B0210003E5E4 /* Resources */,
+				0D8708451EEF808AB46824D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +550,7 @@
 				TargetAttributes = {
 					EA1F1AAA1A09B0210003E5E4 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = TDHH76735A;
 					};
 					EA1F1AC31A09B0210003E5E4 = {
 						CreatedOnToolsVersion = 6.1;
@@ -199,9 +582,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAAB0F01A2CF6800035A60E /* green_button.png in Resources */,
+				EA54D7AA1A4D58AF000688D0 /* Icon-Small-40@3x.png in Resources */,
+				EAE468781A280EC300B8FC57 /* now-hiring.jpg in Resources */,
+				EA3324861A4C93D600A42A0C /* login2.png in Resources */,
+				EA54D7A91A4D58AF000688D0 /* Icon-Small-40@2x.png in Resources */,
+				EA3324831A4C911300A42A0C /* line.png in Resources */,
 				EA1F1ABA1A09B0210003E5E4 /* Main.storyboard in Resources */,
+				EA8E3EF81A4CF35900D85FB7 /* defaultPrefsFile.plist in Resources */,
 				EA1F1ABF1A09B0210003E5E4 /* LaunchScreen.xib in Resources */,
+				EA54D7AC1A4D58AF000688D0 /* Icon-Small@3x.png in Resources */,
+				EA092A481A2BD89A000AB23C /* mmk.png in Resources */,
+				EA33F4571A51434900AB5690 /* white.jpg in Resources */,
+				EA3324811A4C8FBD00A42A0C /* login.png in Resources */,
+				EA54D7A81A4D58AF000688D0 /* Icon-60@3x.png in Resources */,
 				EA1F1ABC1A09B0210003E5E4 /* Images.xcassets in Resources */,
+				EA54D7AB1A4D58AF000688D0 /* Icon-Small@2x.png in Resources */,
+				EAA7CB791A51C4E100AFC945 /* white_bckg.jpg in Resources */,
+				EACF074F1A09BE4C004604CB /* 1.jpeg in Resources */,
+				EA54D7A21A4D5898000688D0 /* Icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +613,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D8708451EEF808AB46824D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55034E61B036BE63EB54788 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA1F1AA71A09B0210003E5E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1F1AB71A09B0210003E5E4 /* ViewController.m in Sources */,
+				EACF07391A09BC27004604CB /* MMKLoginViewController.m in Sources */,
+				EAE468761A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m in Sources */,
+				EAE468811A28650E00B8FC57 /* MMKJobPostingViewController.m in Sources */,
+				EACF073C1A09BC45004604CB /* MMKProfileViewController.m in Sources */,
 				EA1F1AB41A09B0210003E5E4 /* AppDelegate.m in Sources */,
+				EABCF8A41A0C5D9200FF5D48 /* MMKMatchesViewController.m in Sources */,
+				EA31817D1A29403A00F83DA7 /* MMKBusinessChatViewController.m in Sources */,
+				EAE4687C1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m in Sources */,
+				EACF074B1A09BCE0004604CB /* MMKMatchViewController.m in Sources */,
+				EA66C3BD1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m in Sources */,
+				EA3181831A2940C900F83DA7 /* MMKBusinessMatchesViewController.m in Sources */,
+				EAA632891A0C723500B6A80A /* MMKChatViewController.m in Sources */,
+				EA3181801A29406200F83DA7 /* MMKBusinessMatchViewController.m in Sources */,
+				EACAEEA61A2958FB00542F53 /* MMKBusinessMessageData.m in Sources */,
+				EACF07361A09B92B004604CB /* MMKConstants.m in Sources */,
+				EAF64B481A2129E20073901E /* MMKBusinessSetttingsViewController.m in Sources */,
+				EACF07451A09BCB1004604CB /* MMKTestUser.m in Sources */,
+				EAF64B441A211F770073901E /* MMKBusinessLoginViewController.m in Sources */,
 				EA1F1AB11A09B0210003E5E4 /* main.m in Sources */,
+				EACF073F1A09BC52004604CB /* MMKHomeViewController.m in Sources */,
+				EACF07421A09BC68004604CB /* MMKSettingsViewController.m in Sources */,
+				EAF64B4C1A213CD00073901E /* RegisteredBusinessLoginViewController.m in Sources */,
+				975E9F411A22A0130043E618 /* MMKMessageData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,21 +793,43 @@
 		};
 		EA1F1ACF1A09B0210003E5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80AF4FD22F9E8F90CF22557 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/munaf/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Jobazo",
+				);
 				INFOPLIST_FILE = Jobazo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EA1F1AD01A09B0210003E5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D06DF00A80B6D461864E548 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/munaf/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Jobazo",
+				);
 				INFOPLIST_FILE = Jobazo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +886,7 @@
 				EA1F1AD01A09B0210003E5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1F1AD11A09B0210003E5E4 /* Build configuration list for PBXNativeTarget "JobazoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +895,7 @@
 				EA1F1AD31A09B0210003E5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

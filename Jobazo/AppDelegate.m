@@ -8,6 +8,18 @@
 
 #import "AppDelegate.h"
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MMKConstants.h"
+#import "AppDelegate.h"
+#import "PFFacebookUtils.h"
+#import <Parse/Parse.h>
+#import <Parse.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <FacebookSDK/FacebookSDK.h>
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 @interface AppDelegate ()
 
 @end
@@ -16,9 +28,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    [self.window setTintColor:[UIColor whiteColor]];
+
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x16a085)];
+    NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIFont fontWithName:@"Khmer Sangam MN" size:18.0],NSFontAttributeName,
+                                               [UIColor whiteColor],NSForegroundColorAttributeName, nil];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
+    
+  
+    
+    
+    
+    
+    
+    [Parse setApplicationId:@"u16ebDPMTRxSsGI8THSIXm1Qba1fXGgi9Vjzi2HN" clientKey:@"fwejmCiaX2M107ZCjRlRQNHW3zTtOrt2OEY26GLw"];
+    [PFFacebookUtils initializeFacebook];
+    
+    
+    //THIS IS FOR USER SETTINGS TO BE SET INITIALLY
+    
+    NSString *defaultPrefsFile = [[NSBundle mainBundle] pathForResource:@"defaultPrefsFile" ofType:@"plist"];
+    NSDictionary *defaultPreferences = [NSDictionary dictionaryWithContentsOfFile:defaultPrefsFile];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultPreferences];
+    
+
     return YES;
 }
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession:[PFFacebookUtils session]];
+    
+}
+    
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

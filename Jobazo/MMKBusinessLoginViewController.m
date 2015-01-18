@@ -26,7 +26,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *passwordField;
 @property (strong, nonatomic) IBOutlet UITextField *reenterPasswordField;
 @property (strong, nonatomic) IBOutlet UIButton *registerButton;
-@property (strong, nonatomic) IBOutlet UIButton *alreadyRegisteredBusinessLoginButton;
+
 
 @end
 
@@ -74,10 +74,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)alreadyRegisteredLoginButtonPressed:(id)sender {
-
-    [self performSegueWithIdentifier:@"alreadyRegisteredBusinessLoginSegue" sender:self];
-}
 
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {

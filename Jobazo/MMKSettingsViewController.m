@@ -32,6 +32,7 @@
 //@property (strong, nonatomic) IBOutlet UISwitch *womensSwitch;
 @property (strong, nonatomic) IBOutlet UILabel *activityLabel;
 @property (strong, nonatomic) IBOutlet UILabel *activityNoLabel;
+@property (strong, nonatomic) IBOutlet UIButton *findFriendsButton;
 
 
 @end
@@ -103,6 +104,10 @@
     
 }
 
+- (IBAction)findFriendsButtonPressed:(UIButton *)sender {
+    
+    [self performSegueWithIdentifier:@"SettingsToFindFriendsSegue" sender:self];
+}
 
 
 #pragma mark - Helper

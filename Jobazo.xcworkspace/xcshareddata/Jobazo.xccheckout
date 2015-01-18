@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D97816A5-6CD1-4B4C-A87E-404F4DFF059C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jobazo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C35516D47E5A296E5B2004786BD907E21D83D63</key>
+		<string>https://github.com/mmk88/Jobazo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Jobazo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C35516D47E5A296E5B2004786BD907E21D83D63</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mmk88/Jobazo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C35516D47E5A296E5B2004786BD907E21D83D63</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C35516D47E5A296E5B2004786BD907E21D83D63</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Jobazo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

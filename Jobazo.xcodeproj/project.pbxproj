@@ -52,6 +52,8 @@
 		EACF075D1A09C700004604CB /* libPods-Parse-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07561A09C700004604CB /* libPods-Parse-iOS.a */; };
 		EACF075E1A09C700004604CB /* libPods-Parse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07571A09C700004604CB /* libPods-Parse.a */; };
 		EACF075F1A09C700004604CB /* libPods-ParseFacebookUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACF07581A09C700004604CB /* libPods-ParseFacebookUtils.a */; };
+		EAD8BEDB1A6B1D6C00136BEC /* MMKFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD8BEDA1A6B1D6C00136BEC /* MMKFindFriendsViewController.m */; };
+		EAD8BEE51A6B220E00136BEC /* RPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD8BEE41A6B220E00136BEC /* RPSAppDelegate.m */; };
 		EAE468761A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE468751A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m */; };
 		EAE468781A280EC300B8FC57 /* now-hiring.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAE468771A280EC300B8FC57 /* now-hiring.jpg */; };
 		EAE4687C1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4687B1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m */; };
@@ -143,6 +145,11 @@
 		EACF07571A09C700004604CB /* libPods-Parse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Parse.a"; path = "Pods/build/Debug-iphoneos/libPods-Parse.a"; sourceTree = "<group>"; };
 		EACF07581A09C700004604CB /* libPods-ParseFacebookUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ParseFacebookUtils.a"; path = "Pods/build/Debug-iphoneos/libPods-ParseFacebookUtils.a"; sourceTree = "<group>"; };
 		EACF07601A09C90F004604CB /* Jobazo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jobazo-PrefixHeader.pch"; sourceTree = "<group>"; };
+		EAD8BED91A6B1D6C00136BEC /* MMKFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKFindFriendsViewController.h; sourceTree = "<group>"; };
+		EAD8BEDA1A6B1D6C00136BEC /* MMKFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKFindFriendsViewController.m; sourceTree = "<group>"; };
+		EAD8BEDC1A6B1F6900136BEC /* OGProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGProtocols.h; sourceTree = "<group>"; };
+		EAD8BEE31A6B220E00136BEC /* RPSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSAppDelegate.h; sourceTree = "<group>"; };
+		EAD8BEE41A6B220E00136BEC /* RPSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSAppDelegate.m; sourceTree = "<group>"; };
 		EAE468741A26756F00B8FC57 /* MMKEditBusinessPostingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKEditBusinessPostingViewController.h; sourceTree = "<group>"; };
 		EAE468751A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKEditBusinessPostingViewController.m; sourceTree = "<group>"; };
 		EAE468771A280EC300B8FC57 /* now-hiring.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "now-hiring.jpg"; sourceTree = "<group>"; };
@@ -236,6 +243,7 @@
 		EA1F1AAD1A09B0210003E5E4 /* Jobazo */ = {
 			isa = PBXGroup;
 			children = (
+				EAD8BED81A6B1AA100136BEC /* FindFriends */,
 				EA31817A1A29401F00F83DA7 /* Business Chat */,
 				EA3181791A293FFF00F83DA7 /* Business Match */,
 				EA3181781A293FEC00F83DA7 /* Business Matches */,
@@ -443,6 +451,18 @@
 				EA66C3BC1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m */,
 			);
 			name = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		EAD8BED81A6B1AA100136BEC /* FindFriends */ = {
+			isa = PBXGroup;
+			children = (
+				EAD8BED91A6B1D6C00136BEC /* MMKFindFriendsViewController.h */,
+				EAD8BEDA1A6B1D6C00136BEC /* MMKFindFriendsViewController.m */,
+				EAD8BEDC1A6B1F6900136BEC /* OGProtocols.h */,
+				EAD8BEE31A6B220E00136BEC /* RPSAppDelegate.h */,
+				EAD8BEE41A6B220E00136BEC /* RPSAppDelegate.m */,
+			);
+			name = FindFriends;
 			sourceTree = "<group>";
 		};
 		EAE468721A26754B00B8FC57 /* Edit Business Posting  */ = {
@@ -654,12 +674,14 @@
 				EACF07391A09BC27004604CB /* MMKLoginViewController.m in Sources */,
 				EAE468761A26756F00B8FC57 /* MMKEditBusinessPostingViewController.m in Sources */,
 				EAE468811A28650E00B8FC57 /* MMKJobPostingViewController.m in Sources */,
+				EAD8BEE51A6B220E00136BEC /* RPSAppDelegate.m in Sources */,
 				EACF073C1A09BC45004604CB /* MMKProfileViewController.m in Sources */,
 				EA1F1AB41A09B0210003E5E4 /* AppDelegate.m in Sources */,
 				EABCF8A41A0C5D9200FF5D48 /* MMKMatchesViewController.m in Sources */,
 				EA31817D1A29403A00F83DA7 /* MMKBusinessChatViewController.m in Sources */,
 				EAE4687C1A2813D900B8FC57 /* MMKEditBusinessInformationViewController.m in Sources */,
 				EACF074B1A09BCE0004604CB /* MMKMatchViewController.m in Sources */,
+				EAD8BEDB1A6B1D6C00136BEC /* MMKFindFriendsViewController.m in Sources */,
 				EA66C3BD1A0AB1DA00D57CC4 /* MMKEditProfileViewController.m in Sources */,
 				EA3181831A2940C900F83DA7 /* MMKBusinessMatchesViewController.m in Sources */,
 				EAA632891A0C723500B6A80A /* MMKChatViewController.m in Sources */,
@@ -732,7 +754,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -752,6 +775,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e03cffbc-9725-46e5-a7c3-9858d513303a";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -773,7 +797,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -786,6 +811,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e03cffbc-9725-46e5-a7c3-9858d513303a";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -796,6 +822,7 @@
 			baseConfigurationReference = B80AF4FD22F9E8F90CF22557 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/munaf/Documents/FacebookSDK,
@@ -808,6 +835,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e03cffbc-9725-46e5-a7c3-9858d513303a";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -817,6 +845,7 @@
 			baseConfigurationReference = 9D06DF00A80B6D461864E548 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/munaf/Documents/FacebookSDK,
@@ -829,6 +858,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e03cffbc-9725-46e5-a7c3-9858d513303a";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -867,6 +897,81 @@
 			};
 			name = Release;
 		};
+		EAB10EF61A6C54CE00DB4620 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e03cffbc-9725-46e5-a7c3-9858d513303a";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		EAB10EF71A6C54CE00DB4620 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D06DF00A80B6D461864E548 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Munaf Kachwala (TDHH76735A)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/munaf/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Jobazo",
+				);
+				INFOPLIST_FILE = Jobazo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e03cffbc-9725-46e5-a7c3-9858d513303a";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		EAB10EF81A6C54CE00DB4620 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JobazoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobazo.app/Jobazo";
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -875,6 +980,7 @@
 			buildConfigurations = (
 				EA1F1ACC1A09B0210003E5E4 /* Debug */,
 				EA1F1ACD1A09B0210003E5E4 /* Release */,
+				EAB10EF61A6C54CE00DB4620 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -884,6 +990,7 @@
 			buildConfigurations = (
 				EA1F1ACF1A09B0210003E5E4 /* Debug */,
 				EA1F1AD01A09B0210003E5E4 /* Release */,
+				EAB10EF71A6C54CE00DB4620 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -893,6 +1000,7 @@
 			buildConfigurations = (
 				EA1F1AD21A09B0210003E5E4 /* Debug */,
 				EA1F1AD31A09B0210003E5E4 /* Release */,
+				EAB10EF81A6C54CE00DB4620 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -127,12 +127,15 @@
 }
 
 
-/*
+
+
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     NSLog(@"Number H");
-    [self performSegueWithIdentifier:@"loginToBusinessLoginSegue" sender:self];
+    [self performSegueWithIdentifier:@"businessLoginSegue1" sender:self];
 }
-*/
+
+
+
 
 
 

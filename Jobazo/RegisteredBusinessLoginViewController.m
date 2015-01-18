@@ -19,6 +19,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *alreadyRegisteredBusinessPasswordField;
 @property (strong, nonatomic) IBOutlet UIButton *alreadyRegisteredBusinessLoginButton;
 
+@property (strong, nonatomic) IBOutlet UIButton *StartNewRegistrationButton;
+
 @end
 
 @implementation RegisteredBusinessLoginViewController
@@ -27,6 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -49,6 +53,10 @@
      }];
 }
 
+- (IBAction)startNewRegistrationButtonPressed:(id)sender {
+    
+    [self performSegueWithIdentifier:@"toNewRegistrationSegue" sender:self];
+}
 
 
 

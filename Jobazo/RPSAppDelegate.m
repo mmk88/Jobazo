@@ -13,6 +13,8 @@
 #import <Bolts/Bolts.h>
 
 #import "MMKFindFriendsViewController.h"
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
 
 @implementation RPSAppDelegate
 

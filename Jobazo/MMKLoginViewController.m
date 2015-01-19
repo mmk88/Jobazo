@@ -86,6 +86,12 @@
 
 
 - (IBAction)loginButtonPreseed:(UIButton *)sender {
+    
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"userEnteredAppViaUserSide"];
+    [mixpanel flush];
+    
 
     NSLog(@"Number D");
      self.activityIndicator.hidden =NO;
@@ -130,6 +136,12 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"userEnteredAppViaBusinessSide"];
+    [mixpanel flush];
+    
+    
     NSLog(@"Number H");
     [self performSegueWithIdentifier:@"businessLoginSegue1" sender:self];
 }

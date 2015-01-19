@@ -11,7 +11,8 @@
 #import <Parse/Parse.h>
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
 
 @interface MMKBusinessChatViewController : JSMessagesViewController <JSMessagesViewDelegate,JSMessagesViewDataSource>
 

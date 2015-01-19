@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
 
 int countMonth;
 int countDays;

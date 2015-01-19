@@ -20,6 +20,8 @@
 #import <Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -165,18 +167,34 @@
 
 
 - (IBAction)likeButtonPressed:(UIButton *)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeeLiked"];
+    [mixpanel flush];
+    
+    
     [self checkLike]; /*322*/
+    
 }
 
 - (IBAction)dislikeButtonPressed:(UIButton *)sender {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeeDisliked"];
+    [mixpanel flush];
     [self checkDisLike]; /*322*/
 }
 
 - (IBAction)infoButtonPressed:(UIButton *)sender { /*327*/
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"infoButtonPressed"];
+    [mixpanel flush];
     [self performSegueWithIdentifier:@"homeToProfileSegue" sender:nil];
 }
 
 - (IBAction)chatBarButtonPressed:(UIBarButtonItem *)sender {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employerCheckingChat"];
+    [mixpanel flush];
     [self performSegueWithIdentifier:@"homeToMatchesSegue" sender:nil];
 }
 
@@ -559,6 +577,11 @@
 -(void) MatchedAlert
 {
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Congratulations!" message:@"This Employee wants to work with you too! Goto Chats to contact this Employee." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employerAlertedofLike"];
+    [mixpanel flush];
+    
     [alert show];
 }
 

@@ -9,6 +9,8 @@
 #import "MMKFindFriendsViewController.h"
 #import "OGProtocols.h"
 #import "RPSAppDelegate.h"
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
 
 
 @interface MMKFindFriendsViewController () <FBFriendPickerDelegate, UIAlertViewDelegate>
@@ -185,6 +187,12 @@
 
 - (IBAction)clickInviteFriends:(id)sender {
     // if there is a selected user, seed the dialog with that user
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeeInvitingFriends"];
+    [mixpanel flush];
+    
+    
     NSDictionary *parameters = self.fbidSelection ? @{@"to":self.fbidSelection} : nil;
     [FBWebDialogs presentRequestsDialogModallyWithSession:nil
                                                   message:@"Please come join Jobazo ! Great Jobs for You !"

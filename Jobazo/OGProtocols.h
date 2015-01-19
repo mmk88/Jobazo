@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #import <FacebookSDK/FacebookSDK.h>
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
 
 // FBSample logic
 // The protocols here show how to setup typed access to graph and open graph objects.

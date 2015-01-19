@@ -17,6 +17,9 @@
 #import <Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <Mixpanel.h>
+#define MIXPANEL_TOKEN @"4c051590a5a3568ec9227f64a282d274"
+
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -43,15 +46,12 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
     
-  
-    
-    
-    
-    
     
     [Parse setApplicationId:@"u16ebDPMTRxSsGI8THSIXm1Qba1fXGgi9Vjzi2HN" clientKey:@"fwejmCiaX2M107ZCjRlRQNHW3zTtOrt2OEY26GLw"];
     [PFFacebookUtils initializeFacebook];
     
+    
+    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
     
     //THIS IS FOR USER SETTINGS TO BE SET INITIALLY
     

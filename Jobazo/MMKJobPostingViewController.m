@@ -143,19 +143,35 @@
 #pragma mark - IBActions
 
 - (IBAction)passJobButtonPressed:(UIButton *)sender {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeePassedJob"];
+    [mixpanel flush];
     [self checkPassJob];
 }
 
 - (IBAction)applyJobButtonPressed:(UIButton *)sender {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeeAppliedJob"];
+    [mixpanel flush];
     [self checkApplyJob];
 }
 
 - (IBAction)jobSettingsButtonPressed:(UIBarButtonItem *)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeeCheckingSettings"];
+    [mixpanel flush];
+    
     [self performSegueWithIdentifier:@"jobPostingVCtoUserSettingsVCSegue" sender:self];
 }
 
 
 - (IBAction)jobChatButtonPressed:(UIBarButtonItem *)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"employeeCheckingChat"];
+    [mixpanel flush];
+    
     [self performSegueWithIdentifier:@"jobPostingToBusinessMatchesSegue" sender:self];
     
 }

@@ -187,7 +187,7 @@
     // if there is a selected user, seed the dialog with that user
     NSDictionary *parameters = self.fbidSelection ? @{@"to":self.fbidSelection} : nil;
     [FBWebDialogs presentRequestsDialogModallyWithSession:nil
-                                                  message:@"Please come join Jobazo ! Great Jonbs for You !"
+                                                  message:@"Please come join Jobazo ! Great Jobs for You !"
                                                     title:@"Invite a Friend"
                                                parameters:parameters
                                                   handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {

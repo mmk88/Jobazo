@@ -144,14 +144,14 @@
 
 - (IBAction)passJobButtonPressed:(UIButton *)sender {
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employeePassedJob"];
+    [mixpanel track:@"Employee_PassedJob"];
     [mixpanel flush];
     [self checkPassJob];
 }
 
 - (IBAction)applyJobButtonPressed:(UIButton *)sender {
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employeeAppliedJob"];
+    [mixpanel track:@"Employee_AppliedJob"];
     [mixpanel flush];
     [self checkApplyJob];
 }
@@ -159,7 +159,7 @@
 - (IBAction)jobSettingsButtonPressed:(UIBarButtonItem *)sender {
     
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employeeCheckingSettings"];
+    [mixpanel track:@"Employee_CheckedSettings"];
     [mixpanel flush];
     
     [self performSegueWithIdentifier:@"jobPostingVCtoUserSettingsVCSegue" sender:self];
@@ -169,7 +169,7 @@
 - (IBAction)jobChatButtonPressed:(UIBarButtonItem *)sender {
     
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employeeCheckingChat"];
+    [mixpanel track:@"Employee_CheckedChat"];
     [mixpanel flush];
     
     [self performSegueWithIdentifier:@"jobPostingToBusinessMatchesSegue" sender:self];

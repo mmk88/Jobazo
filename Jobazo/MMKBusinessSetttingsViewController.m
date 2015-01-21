@@ -26,15 +26,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)bussinessLogoutButtonPressed:(UIButton *)sender {
+    
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_LogOut"];
+    [mixpanel flush];
+    
     [PFUser logOut];
     [self performSegueWithIdentifier:@"businessLogoutToMainScreenSegue" sender:nil];
     //[self dismissViewControllerAnimated:YES completion:nil];
@@ -44,11 +48,21 @@
 
 - (IBAction)updateJobPostingButtonPressed:(UIButton *)sender {
     
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_SettingsToUpdateJobPosting"];
+    [mixpanel flush];
+    
     [self performSegueWithIdentifier:@"businessSettingsToUpdateBusinessJobPostingSegue" sender:nil];
 }
 
 
 - (IBAction)UpdateBusinessInformationButtonPressed:(UIButton *)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_SettingsToUpdateBizInfo"];
+    [mixpanel flush];
+    
     
     [self performSegueWithIdentifier:@"businessSettingsToUpdateBusinessInformationSegue" sender:nil];
 }

@@ -65,7 +65,9 @@
 
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+
     
     // ALL THESE LINES HELP THE keyboard go away when i press return; also the BOOL textfield should return is a part of this and then <UITExtField Delegate> in the.h file
     
@@ -142,6 +144,11 @@
 - (IBAction)saveBarButtonItemPressed:(UIButton *)sender {
 
 //331
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Employee_UpdatedInformation"];
+    [mixpanel flush];
+    
 
     [[PFUser currentUser] setObject:self.taglineTextView.text forKey:kMMKUserTagLineKey];
     

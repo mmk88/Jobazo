@@ -38,6 +38,10 @@
 
 - (void)viewDidLoad {
     
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_BusinessInfoUpdate_PageOpened"];
+    [mixpanel flush];
+    
     
     [super viewDidLoad];
     
@@ -132,9 +136,7 @@
     
     [[PFUser currentUser] setObject:profile forKey:@"profile"];
     
-    
     [self checkFieldsComplete];
-    
     
 }
 
@@ -143,11 +145,23 @@
     if ([_businessNameTextField.text isEqualToString:@""]  || [_businessTypeTextField.text isEqualToString:@""] || [_businessWebsiteTextField.text isEqualToString:@""] || [_businessPhoneNumberTextField.text isEqualToString:@""] || [_businessAddressLine1TextField.text isEqualToString:@""] || [_businessAddressLine2TextField.text isEqualToString:@""] || [_businessAddressCityTextField.text isEqualToString:@""] || [_businessAddressZipCodeTextField.text isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Oooopps!" message:@"You need to complete all fields.    Enter 0 if N/A" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        Mixpanel *mixpanel = [Mixpanel sharedInstance];
+        [mixpanel track:@"Business_BusinessInfoUpdate_Error"];
+        [mixpanel flush];
+        
+        
         [alert show];
     }
     else
     {
+        
+        Mixpanel *mixpanel = [Mixpanel sharedInstance];
+        [mixpanel track:@"Business_BusinessInfoUpdate_Success"];
+        [mixpanel flush];
+        
         [self performSegueWithIdentifier:@"businessInformationToJobPostingUpdateSegue" sender:self];
+        
         [self.navigationController popViewControllerAnimated:YES];
     }
 }

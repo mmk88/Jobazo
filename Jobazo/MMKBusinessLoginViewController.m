@@ -43,48 +43,29 @@
 }
 
 
-
-/*
- -(void)viewDidAppear:(BOOL) animated{
-    
-    PFUser *user = [PFUser currentUser];
-    if (user.username != nil) {
-        [self performSegueWithIdentifier:@"login" sender:self];
-    }
-}
-
- */
-
-
-
 - (void)viewDidLoad {
-    
-   
     [super viewDidLoad];
-
-    
-    
-    // Do any additional setu p after loading the view.
 }
 
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {
     
-    
-    
     [_usernameField resignFirstResponder];
     [_emailField resignFirstResponder];
     [_passwordField resignFirstResponder];
     [_reenterPasswordField resignFirstResponder];
     [self checkFieldsComplete];
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_NewRegistrationCompleted"];
+    [mixpanel flush];
 }
 
 

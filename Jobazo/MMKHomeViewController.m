@@ -162,6 +162,11 @@
 #pragma mark - IBActions
 
 - (IBAction)settingsBarButtonPressed:(UIBarButtonItem *)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_SettingsChecked"];
+    [mixpanel flush];
+    
     [self performSegueWithIdentifier:@"employeeViewVCtoBusinessSettingsVCSegue" sender:nil];
 }
 
@@ -169,9 +174,8 @@
 - (IBAction)likeButtonPressed:(UIButton *)sender {
     
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employeeLiked"];
+    [mixpanel track:@"Business_LikedEmployee"];
     [mixpanel flush];
-    
     
     [self checkLike]; /*322*/
     
@@ -179,21 +183,21 @@
 
 - (IBAction)dislikeButtonPressed:(UIButton *)sender {
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employeeDisliked"];
+    [mixpanel track:@"Business_DisLikedEmployee"];
     [mixpanel flush];
     [self checkDisLike]; /*322*/
 }
 
 - (IBAction)infoButtonPressed:(UIButton *)sender { /*327*/
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"infoButtonPressed"];
+    [mixpanel track:@"Business_RequestEmployeeInfo"];
     [mixpanel flush];
     [self performSegueWithIdentifier:@"homeToProfileSegue" sender:nil];
 }
 
 - (IBAction)chatBarButtonPressed:(UIBarButtonItem *)sender {
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"employerCheckingChat"];
+    [mixpanel track:@"Business_CheckChat"];
     [mixpanel flush];
     [self performSegueWithIdentifier:@"homeToMatchesSegue" sender:nil];
 }

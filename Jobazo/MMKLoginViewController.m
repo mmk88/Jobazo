@@ -89,7 +89,7 @@
     
     
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"userEnteredAppViaUserSide"];
+    [mixpanel track:@"Employee_Entry"];
     [mixpanel flush];
     
 
@@ -138,7 +138,7 @@
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     
     Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel track:@"userEnteredAppViaBusinessSide"];
+    [mixpanel track:@"Business_Entry"];
     [mixpanel flush];
     
     

@@ -44,16 +44,30 @@
         if (!error) {
             NSLog(@"User Login!");
             [self performSegueWithIdentifier:@"existingMemberToEditJobPostingSegue" sender:self];
+            
+            Mixpanel *mixpanel = [Mixpanel sharedInstance];
+            [mixpanel track:@"Business_LoggedIn"];
+            [mixpanel flush];
+            
         }
         if (error)
         {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oooops!" message:@"Your Password and/or Username is not recognized" delegate:nil cancelButtonTitle:@"OK!" otherButtonTitles:nil, nil];
             [alert show];
+            
+            Mixpanel *mixpanel = [Mixpanel sharedInstance];
+            [mixpanel track:@"Business_LoginError"];
+            [mixpanel flush];
+            
         }
      }];
 }
 
 - (IBAction)startNewRegistrationButtonPressed:(id)sender {
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_NewRegistrationStarted"];
+    [mixpanel flush];
     
     [self performSegueWithIdentifier:@"toNewRegistrationSegue" sender:self];
 }

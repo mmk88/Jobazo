@@ -41,12 +41,8 @@
 
 - (void)viewDidLoad {
 
-    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
 
-     
      PFQuery *query = [PFQuery queryWithClassName:kMMKPhotoClassKey];
      [query whereKey:kMMKPhotoUserKey equalTo:[PFUser currentUser]];
      [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -60,7 +56,6 @@
      }
      }];
 
-    
     
     NSDate *now = [NSDate date];
     //[_startDate setDate:now animated:YES];
@@ -136,6 +131,11 @@
     [[PFUser currentUser] setObject:self.hoursOfWork.text forKey:kMMKHoursOfWorkKey];
     
     [[PFUser currentUser] saveInBackground];
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_JobPosting_Updated"];
+    [mixpanel flush];
+    
 
     [self checkFieldsComplete];
     
@@ -153,6 +153,11 @@
     [[PFUser currentUser] setObject:self.briefJobDescription.text forKey:kMMKBriefJobDescriptionKey];
     [[PFUser currentUser] setObject:self.hoursOfWork.text forKey:kMMKHoursOfWorkKey];
     
+    
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Business_JobPosting_NotUpdated"];
+    [mixpanel flush];
+    
     [[PFUser currentUser] saveInBackground];
     
     [self checkFieldsComplete];
@@ -162,6 +167,11 @@
     if ([_jobPosting.text isEqualToString:@""]  || [_hourlyPay.text isEqualToString:@""] || [_briefJobDescription.text isEqualToString:@""] || [_hoursOfWork.text isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Oooopps!" message:@"You need to complete all fields.           Enter 0 if N/A" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        Mixpanel *mixpanel = [Mixpanel sharedInstance];
+        [mixpanel track:@"Business_JobPosting_Error"];
+        [mixpanel flush];
+        
         [alert show];
     }
     else
